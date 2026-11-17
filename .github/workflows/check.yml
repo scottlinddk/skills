@@ -1,0 +1,28 @@
+name: Check
+
+# Runs the repo invariants from CLAUDE.md (scripts/check-skills.mjs) and the
+# plugin version sync check on every pull request and on main.
+
+on:
+  pull_request:
+  push:
+    branches:
+      - main
+
+permissions:
+  contents: read
+
+jobs:
+  check:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: 22
+
+      - name: Check
+        run: npm run check
