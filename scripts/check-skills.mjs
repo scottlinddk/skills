@@ -28,7 +28,7 @@ const SHIPPED_ONLY = ["personal"];
 const UNSHIPPED = ["misc", "in-progress", "deprecated"];
 const SHIPPED = [...PROMOTED, ...SHIPPED_ONLY];
 
-const EM_DASH = "—";
+const EM_DASH = String.fromCharCode(0x2014);
 const PROSE = /\.(md|mjs|js|cjs|sh|ya?ml|json)$/;
 // Text this repo does not author, plus CHANGELOG.md: its older entries predate
 // the rule and are upstream history, so rewriting them would make every
