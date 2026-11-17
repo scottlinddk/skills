@@ -1,5 +1,19 @@
 # mattpocock-skills
 
+## 1.4.0
+
+### Minor Changes
+
+- [`c6e099b`](https://github.com/mattpocock/skills/commit/c6e099b01c4e165348d654f29cb9b4de73c3ebcb) Thanks [@claude](https://github.com/claude)! - Fork changes. Add a `personal/` bucket with three skills: `kickoff` (user-invoked: brief, context sheet and file tree before any code on a new project), `dotnet-backend` (the tight loop, test seam, deep modules and OpenAPI contract for C#/.NET) and `umbraco` (Umbraco work split by major version). `setup-matt-pocock-skills` gains Jira (`acli`) and Notion (MCP) issue-tracker templates. Add `npm run check`, which verifies the repo's skill invariants and runs in CI; it found and this fixes `chief-of-staff` missing from the in-progress README and `software-factory` missing its `agents/openai.yaml`.
+
+### Patch Changes
+
+- [#1363](https://github.com/mattpocock/skills/pull/1363) [`5ae4816`](https://github.com/mattpocock/skills/commit/5ae481693d13b37d4d2c2c92d0b66d299c93e695) Thanks [@mattpocock](https://github.com/mattpocock)! - `chief-of-staff` now looks for a shared wiki before starting its own. It also runs `retro` on about one in five of its subagents' sessions, the ones where something went wrong first, and acts on the findings itself, and runs `to-spec`, `to-tickets` and `implement-spec` for large chunks of work, reading each skill by relative path so they can stay user-invoked.
+
+- [#1342](https://github.com/mattpocock/skills/pull/1342) [`a496f55`](https://github.com/mattpocock/skills/commit/a496f5513d4a4cf889bc48e189e579f4b0bdf6aa) Thanks [@mattpocock](https://github.com/mattpocock)! - `implement-spec` now uses a fresh implementer subagent for each ticket and for the code-review fixes, instead of reusing an earlier implementer.
+
+- [#1316](https://github.com/mattpocock/skills/pull/1316) [`4ae2317`](https://github.com/mattpocock/skills/commit/4ae2317ddb22b046e26455e4f9c9b3aaaf62212d) Thanks [@mattpocock](https://github.com/mattpocock)! - Add `software-factory`, an in-progress user-invoked reference skill: a glossary for designing a software factory (tasks, runs, runners, triggers, and the services they plug into), example tasks grouped by the problem they solve, surveys of the products that fill each slot (ticket trackers, git hosts, runners, observability platforms), and the questions that finish a design. Call it alongside a grilling session.
+
 ## 1.3.2
 
 ### Patch Changes
