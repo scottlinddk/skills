@@ -10,6 +10,9 @@
 
 # Skills For Real Engineers
 
+> [!NOTE]
+> This is a fork of [mattpocock/skills](https://github.com/mattpocock/skills) with a [`personal/`](./skills/personal/README.md) bucket and Jira and Notion issue trackers added. [FORK.md](./FORK.md) lists what differs, how to install from the fork, and how to pull upstream changes.
+
 [![skills.sh](https://skills.sh/b/mattpocock/skills)](https://skills.sh/mattpocock/skills)
 
 My agent skills that I use every day to do real engineering - not vibe coding.
@@ -256,3 +259,16 @@ General workflow tools, not code-specific.
 
 - **[grilling](./skills/productivity/grilling/SKILL.md)**: Interview the user relentlessly about a plan, decision, or idea until every branch of the design tree is resolved. The reusable interview primitive behind `grill-me`, `grill-with-docs`, `triage`, `wayfinder` and `improve-codebase-architecture`.
 - **[writing-for-agents](./skills/productivity/writing-for-agents/SKILL.md)**: Writing documents for agents: skills, AGENTS.md/CLAUDE.md, and any doc an agent reaches by a pointer.
+
+### Personal
+
+Fork-only skills for one stack: React and TypeScript in front, C#/.NET and Umbraco behind. See [FORK.md](./FORK.md).
+
+**User-invoked**
+
+- **[kickoff](./skills/personal/kickoff/SKILL.md)**: Start a brand-new project: the brief in English, a context sheet, and an agreed modular file tree, all before any code.
+
+**Model-invoked**
+
+- **[dotnet-backend](./skills/personal/dotnet-backend/SKILL.md)**: The engineering skills applied to a C#/.NET backend: the tight loop, the test seam, deep modules, and the OpenAPI contract a TypeScript client is generated from.
+- **[umbraco](./skills/personal/umbraco/SKILL.md)**: Umbraco CMS work, split by major version: schema and models, backoffice extensions, the Content Delivery API, upgrades across the version 14 split.

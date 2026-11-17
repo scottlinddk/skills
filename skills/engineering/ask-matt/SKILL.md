@@ -92,6 +92,14 @@ Off the main flow entirely.
 - **`/teach`**: learn a concept over multiple sessions, using the current directory as a stateful workspace.
 - **`/writing-for-agents`** is the reference for writing documents agents consume: skills, AGENTS.md, pointed-at docs.
 
+## Personal stack
+
+Fork-only skills for one stack (React and TypeScript in front, C#/.NET and Umbraco behind). They sit beside the flows above, not on them.
+
+- **`/kickoff`** opens a brand-new project **before** the main flow: the brief restated in English, a context sheet, and an agreed modular file tree, with no code until the tree is approved. It ends by pointing you at `/setup-matt-pocock-skills` and then `/grill-with-docs` or `/wayfinder`.
+- **`/dotnet-backend`** is how `/tdd`, `/diagnosing-bugs`, `/codebase-design` and `/code-review` land in C#/.NET: the tight loop, the HTTP test seam, deep modules, and the OpenAPI contract a TypeScript client is generated from. Model-invoked, so the agent reaches for it in a .NET repo.
+- **`/umbraco`** is for Umbraco CMS work, which branches on the major version (the backoffice changed shape at 14). Model-invoked.
+
 ## Precondition
 
-**`/setup-matt-pocock-skills`**: run before your first engineering flow to configure the issue tracker, triage labels, and doc layout the other skills assume. Custom issue trackers also work.
+**`/setup-matt-pocock-skills`**: run before your first engineering flow to configure the issue tracker, triage labels, and doc layout the other skills assume. GitHub, GitLab, Jira, Notion and local markdown ship as templates; any other tracker works from a description.

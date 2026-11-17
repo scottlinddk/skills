@@ -1,0 +1,5 @@
+interface:
+  display_name: "Kickoff"
+  short_description: "Brief, context and file tree before code"
+policy:
+  allow_implicit_invocation: false
